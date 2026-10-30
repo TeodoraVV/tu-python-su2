@@ -2,7 +2,7 @@
 
 n = int(input("Въведете цяло число: "))
 
-# abs() премахва знака минус, за да останат само цифрите
+
 digits = tuple(int(ch) for ch in str(abs(n)))
 reversed_digits = digits[::-1]
 
