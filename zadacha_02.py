@@ -3,14 +3,14 @@
 
 import random
 
-N = 6  # брой на случайните числа
+N = 6  
 numbers = [random.randint(1, 50) for _ in range(N)]
 print("Първоначален списък:", numbers)
 
 result = []
 for i in range(len(numbers)):
     result.append(numbers[i])
-    if i < len(numbers) - 1:              # след последния елемент няма съсед
+    if i < len(numbers) - 1:             
         result.append(numbers[i] + numbers[i + 1])
 
-print("Резултат:           ", result)
+print("Резултат:  ", result)
